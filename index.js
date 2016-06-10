@@ -1,3 +1,5 @@
+const LOGFILE = process.env.LOGFILE || __dirname + '/application.log'
+
 const util = require('util')
 const winston = require('winston')
 const logger = new winston.Logger()
@@ -16,7 +18,7 @@ switch((process.env.NODE_ENV || '').toLowerCase()) {
     case 'production':
         production = true;
         logger.add(winston.transports.File, {
-            filename: process.env.LOGFILE || __dirname + '/application.log',
+            filename: LOGFILE,
             json: true,
             maxsize: 5242880, //5MB
             maxFiles: 5,

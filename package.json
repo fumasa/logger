@@ -1,12 +1,12 @@
 {
-  "name": "logger",
+  "name": "yeller-logger",
   "version": "1.0.0",
-  "description": "",
+  "description": "library to setup logger for Wakedown Yeller",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Rafael 'fumasa' Giorgetti <fumasa@wakedown.org>",
+  "author": "Rafael 'fumasa' Giorgetti <rafael@wakedown.org>",
   "license": "MIT",
   "private": true,
   "dependencies": {
