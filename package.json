@@ -8,6 +8,7 @@
   },
   "author": "Rafael 'fumasa' Giorgetti <fumasa@wakedown.org>",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "winston": "^2.2.0"
   }
