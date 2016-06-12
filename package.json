@@ -9,6 +9,10 @@
   "author": "Rafael 'fumasa' Giorgetti <rafael@wakedown.org>",
   "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fumasa/yeller-logger.git"
+  },
   "dependencies": {
     "winston": "^2.2.0"
   }
