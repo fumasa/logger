@@ -18,6 +18,7 @@
     "url": "git+https://8a5b5820b2d648eb126fdc003cbe3a5e1c3bd4d9:x-oauth-basic@github.com/fumasa/yeller-logger.git"
   },
   "dependencies": {
-    "winston": "^2.2.0"
+    "winston": "^2.2.0",
+    "winston-papertrail": "^1.0.2"
   }
 }

@@ -5,6 +5,8 @@ const winston = require('winston')
 const logger = new winston.Logger()
 let production = (process.env.NODE_ENV || '').toLowerCase() === 'production'
 
+require('winston-papertrail').Papertrail
+
 module.exports = {
   middleware: function (req, res, next) {
     console.info(req.method, req.url, res.statusCode)
@@ -17,6 +19,13 @@ module.exports = {
 switch ((process.env.NODE_ENV || '').toLowerCase()) {
   case 'production':
     production = true
+    logger.add(winston.transports.Papertrail({
+      host: 'logs.papertailapp.com',
+      port: 12345
+    }))
+    break
+  case 'development':
+    production = false
     logger.add(winston.transports.File, {
       filename: LOGFILE,
       json: true,
