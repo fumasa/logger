@@ -19,10 +19,10 @@ module.exports = {
 switch ((process.env.NODE_ENV || '').toLowerCase()) {
   case 'production':
     production = true
-    logger.add(winston.transports.Papertrail({
+    logger.add(winston.transports.Papertrail, {
       host: 'logs.papertailapp.com',
       port: 12345
-    }))
+    })
     break
   case 'development':
     production = false
