@@ -24,7 +24,7 @@ switch ((process.env.NODE_ENV || '').toLowerCase()) {
       port: 12345
     })
     break
-  case 'development':
+  case 'reversion':
     production = false
     logger.add(winston.transports.File, {
       filename: LOGFILE,
