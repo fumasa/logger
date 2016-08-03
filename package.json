@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fumasa/yeller-logger.git"
+    "url": "git+https://github.com/fumasa/logger.git"
   },
   "author": "Rafael 'fumasa' Giorgetti <rafael@wakedown.org>",
   "license": "MIT",
