@@ -1,8 +1,9 @@
 {
-  "name": "yeller-logger",
+  "name": "logger",
   "version": "1.0.0",
-  "description": "library to setup logger for Wakedown Yeller",
+  "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +11,12 @@
     "node": "6.2.1",
     "npm": "3.9.6"
   },
-  "author": "Rafael 'fumasa' Giorgetti <rafael@wakedown.org>",
-  "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://8a5b5820b2d648eb126fdc003cbe3a5e1c3bd4d9:x-oauth-basic@github.com/fumasa/yeller-logger.git"
+    "url": "git+https://github.com/fumasa/yeller-logger.git"
   },
+  "author": "Rafael 'fumasa' Giorgetti <rafael@wakedown.org>",
+  "license": "MIT",
   "dependencies": {
     "winston": "^2.2.0",
     "winston-papertrail": "^1.0.2"
