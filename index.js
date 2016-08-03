@@ -1,5 +1,3 @@
-const LOGFILE = process.env.LOGFILE || './application.log'
-
 const util = require('util')
 const winston = require('winston')
 const logger = new winston.Logger()
@@ -22,17 +20,6 @@ switch ((process.env.NODE_ENV || '').toLowerCase()) {
     logger.add(winston.transports.Papertrail, {
       host: 'logs.papertailapp.com',
       port: 12345
-    })
-    break
-  case 'reversion':
-    production = false
-    logger.add(winston.transports.File, {
-      filename: LOGFILE,
-      json: true,
-      maxsize: 5242880, // 5MB
-      maxFiles: 5,
-      colorize: false,
-      level: 'warn'
     })
     break
   case 'test':
